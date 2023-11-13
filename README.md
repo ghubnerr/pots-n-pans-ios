@@ -87,7 +87,7 @@ Pots n' Pans is the mobile version app of ["Let's Cook!"](https://github.com/ghu
     - <= Recipes
 ## Wireframes
 ### Figma Wireframe (see [Wireframe file](./WireFrame.fig))
-<img width="800" alt="image" src="https://github.com/ghubnerr/pots-n-pans-mobile/assets/91924667/ecee04c8-6ada-4dce-a9f5-6a36ca6db7c8">
+<img width="760" alt="image" src="https://github.com/ghubnerr/pots-n-pans-ios/assets/91924667/3672729f-f8c8-4937-adfd-8e1c207279b7">
 
 ## Schema 
 
