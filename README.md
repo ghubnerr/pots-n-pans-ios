@@ -1,5 +1,18 @@
 # Pots N' Pans Mobile
 
+
+## Week 8 Submission
+- Progress: [Video Follow-along](https://www.loom.com/share/afca237369da4ea489c6a3526bb785fb?sid=ac329d40-d20d-4b23-bede-bdca8b1c6c4a)
+
+**Sprints from now on:**
+1. Navigation and Pages
+2. Styling (part I)
+3. Turning on and interfacing with the API (Uploading Pictures and getting data back)
+4. Displaying Data from the API in table views
+5. Using segues to access individual recipes
+6. Style (part II)
+<hr>
+
 ## Table of Contents
 
 1. [Overview](#Overview)
@@ -8,7 +21,7 @@
 4. [Schema](#Schema)
 
 ## Overview
-Pots n' Pans is the mobile version app of ["Let's Cook!"](https://github.com/ghubnerr/pots_n_pans) that offers an effortless way for users to minimize food waste. Through Let's Cook, users have the ability to upload a photo of the contents of their refrigerator. The website then provides viable recipes using the ingredients present in their fridge.
+Pots n' Pans is the mobile version app of ["Let's Cook!"](https://github.com/ghubnerr/pots_n_pans) (also made by me and my team) that offers an effortless way for users to minimize food waste. Through Let's Cook, users have the ability to upload a photo of the contents of their refrigerator. The website then provides viable recipes using the ingredients present in their fridge. Our main functionality interfaces with a **Computer vision** model that we made and trained that scans items in your fridge and recognizes them, allowing you to use that data to fetch recipes that contain it. Both versions just interface with the model via API.
 
 ### Web Version:
 <img width="1294" alt="Untitled" src="https://github.com/ghubnerr/pots_n_pans/assets/144561702/c9acc9d9-0100-4b78-958b-9a0fcb5dc837">
@@ -19,13 +32,11 @@ Pots n' Pans is the mobile version app of ["Let's Cook!"](https://github.com/ghu
 **Hack GT X Winner for Sustainability**: Minimizing food waste through smart recipes! Save yourself from the Freshman 50 with an app that tells you exactly what you can cook from the items in your fridge!
 ### App Evaluation
 
-[Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Market**: The marketing for this app is any person who struggles with cooking ideation from a set of ingredients. Also someone who doesn't want to spend too much on food, and wants to use their groceries to their best extent. Could also be someone who needs some help creatively.
+- **Story**: In the mobile version, it continues to address the significant issue of food waste and the lack of recipe ideas from miscellaneous ingredients. It would effectively convey its value to users by emphasizing the convenience of reducing waste, saving money, and embracing new recipes, all on the go.
+- **Mobile**: The uniqueness of this project comes from the fact that it takes data straight out of your fridge and tells you what you can cook with it. It's catered to the user and has a unique, simple and user-friendly design.
+- **Habit**: The mobile app can be designed to be habit-forming by encouraging users to regularly check their fridge contents, try new recipes, and actively reduce food waste. Frequent use of the app to minimize waste could be habit-forming.
+- **Scope**: The technical challenges, such as using mobile camera capabilities for ingredient input are feasible. The most significantly difficult task -- the computer vision model -- is already taken care of from the backend of its Web version, which comes out in the form of a simple API!
 
 ## Product Spec
 
@@ -33,59 +44,72 @@ Pots n' Pans is the mobile version app of ["Let's Cook!"](https://github.com/ghu
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can scan any type of ingredients, from any angle to get their desired recipes
+* User can see from the recipes that the app displays, what ingredients were identified in the picture, and which ones were missing.
+* User can upload a photo
+* User can see multiple recipes
+* User can come back to the upload page if the picture didn't work really well
+* User can have a detailed view of the recipe that they select, with pictures and everything.
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can login to keep track of ingredients last identified
 
 ### 2. Screen Archetypes
 
-- [ ] [list first screen here]
-* [list associated required story here]
-* ...
-list second screen here]
-* [list associated required story here]
-* ...
-
+- Landing Screen
+    - Title screen with "Let's Cook" button!
+- Scan/Upload Screen
+    - Big button to upload, and another button to confirm
+- Loading Screen
+    - Just displays text - Can cancel anytime
+- Recipes Screen
+    - Users can view all recipes that matched the model's response to their image with ingredients
+- Individual Recipe Screen
+    - Users can view the recipes they chose in detail 
 ### 3. Navigation
 
-**Tab Navigation** (Tab to Screen)
+**Tab Navigation** 
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* No tabs needed
 
-**Flow Navigation** (Screen to Screen)
-
-- [ ] [list first screen here]
-* [list screen navigation here]
-* ...
-- [ ] [list second screen here]
-* [list screen navigation here]
-* ...
-
+**Flow Navigation**
+- Landing Screen
+    - => Scan/Upload Screen
+- Scan/Upload Screen
+    - <= Home
+- Loading Screen
+    - <= Scan/Upload Screen
+- Recipes Screen
+    - <= Loading Screen
+    - => /any recipe
+- Individual Recipe Screen
+    - <= Recipes
 ## Wireframes
-
-[Add picture of your hand sketched wireframes in this section]
+### Figma Wireframe (see [Wireframe file](./WireFrame.fig))
 <img width="800" alt="image" src="https://github.com/ghubnerr/pots-n-pans-mobile/assets/91924667/ecee04c8-6ada-4dce-a9f5-6a36ca6db7c8">
-
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
 
 ## Schema 
 
 [This section will be completed in Unit 9]
 
-### Models
+### Model -- API Documentation can be found [here](https://github.com/Acty101/hackgtX-pots-and-pans)
 
-[Add table of models]
+API Response Data model and Usage:
+
+- `POST` a request to the following URL [https://api.runpod.ai/v2/mi1w7cfskbr6up/runsync](https://api.runpod.ai/v2/mi1w7cfskbr6up/runsync) with proper credentials and a payload of a base_64 encoded image
+- Returns an object with the following schema:
+
+```
+{
+delayTime: number;
+executionTime: number;
+id: string;
+output: {classes: string[], recipes: string[]};
+status: string;
+}
+```
 
 ### Networking
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- The Scan/Upload screen does an API call (as specified above) with a base64 version of the image that is uploaded and returns it into the data model above.
