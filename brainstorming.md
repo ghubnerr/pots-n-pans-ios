@@ -40,4 +40,4 @@
 - Scope: The technical challenge might be moderate, given the need for connecting users with local businesses and events. The concept is well-defined.
 <hr>
 
-### The Final Idea $\rightarrow$ Pots n' Pans Mobile! 🎉
+### The Final Idea -> Pots n' Pans Mobile! 🎉
