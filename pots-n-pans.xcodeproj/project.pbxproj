@@ -16,6 +16,14 @@
 		EB28AC892B02B9C60093D5AA /* pots_n_pansTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28AC882B02B9C60093D5AA /* pots_n_pansTests.swift */; };
 		EB28AC932B02B9C60093D5AA /* pots_n_pansUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28AC922B02B9C60093D5AA /* pots_n_pansUITests.swift */; };
 		EB28AC952B02B9C60093D5AA /* pots_n_pansUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28AC942B02B9C60093D5AA /* pots_n_pansUITestsLaunchTests.swift */; };
+		EB5A62CD2B02C3A100B85EC9 /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB5A62CC2B02C3A000B85EC9 /* IndieFlower-Regular.ttf */; };
+		EB8D51852B0333870081C32D /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = EB8D51842B0333870081C32D /* Nuke */; };
+		EB8D51872B03348F0081C32D /* pan.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8D51862B03348F0081C32D /* pan.png */; };
+		EB8D51892B03363B0081C32D /* blur.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8D51882B03363B0081C32D /* blur.png */; };
+		EB8D518B2B03394B0081C32D /* cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8D518A2B03394B0081C32D /* cherry.png */; };
+		EB8D518F2B0339BC0081C32D /* broccoli.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8D518E2B0339BC0081C32D /* broccoli.png */; };
+		EB8D51912B033A8B0081C32D /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8D51902B033A8B0081C32D /* banana.png */; };
+		EB8D51932B033C780081C32D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8D51922B033C780081C32D /* button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +51,19 @@
 		EB28AC782B02B9C40093D5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB28AC7A2B02B9C50093D5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB28AC7D2B02B9C50093D5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EB28AC7F2B02B9C50093D5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB28AC7F2B02B9C50093D5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "pots-n-pans/Info.plist"; sourceTree = SOURCE_ROOT; };
 		EB28AC842B02B9C60093D5AA /* pots-n-pansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pots-n-pansTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB28AC882B02B9C60093D5AA /* pots_n_pansTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pots_n_pansTests.swift; sourceTree = "<group>"; };
 		EB28AC8E2B02B9C60093D5AA /* pots-n-pansUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pots-n-pansUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB28AC922B02B9C60093D5AA /* pots_n_pansUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pots_n_pansUITests.swift; sourceTree = "<group>"; };
 		EB28AC942B02B9C60093D5AA /* pots_n_pansUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pots_n_pansUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB5A62CC2B02C3A000B85EC9 /* IndieFlower-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IndieFlower-Regular.ttf"; sourceTree = "<group>"; };
+		EB8D51862B03348F0081C32D /* pan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pan.png; sourceTree = "<group>"; };
+		EB8D51882B03363B0081C32D /* blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blur.png; sourceTree = "<group>"; };
+		EB8D518A2B03394B0081C32D /* cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cherry.png; sourceTree = "<group>"; };
+		EB8D518E2B0339BC0081C32D /* broccoli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = broccoli.png; sourceTree = "<group>"; };
+		EB8D51902B033A8B0081C32D /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
+		EB8D51922B033C780081C32D /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8D51852B0333870081C32D /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +115,8 @@
 		EB28AC702B02B9C40093D5AA /* pots-n-pans */ = {
 			isa = PBXGroup;
 			children = (
+				EB5A62C12B02C02B00B85EC9 /* fonts */,
+				EB5A62C62B02C10200B85EC9 /* assets */,
 				EB28AC712B02B9C40093D5AA /* AppDelegate.swift */,
 				EB28AC732B02B9C40093D5AA /* SceneDelegate.swift */,
 				EB28AC752B02B9C40093D5AA /* ViewController.swift */,
@@ -127,6 +145,27 @@
 			path = "pots-n-pansUITests";
 			sourceTree = "<group>";
 		};
+		EB5A62C12B02C02B00B85EC9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EB5A62CC2B02C3A000B85EC9 /* IndieFlower-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		EB5A62C62B02C10200B85EC9 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				EB8D518A2B03394B0081C32D /* cherry.png */,
+				EB8D51902B033A8B0081C32D /* banana.png */,
+				EB8D518E2B0339BC0081C32D /* broccoli.png */,
+				EB8D51922B033C780081C32D /* button.png */,
+				EB8D51882B03363B0081C32D /* blur.png */,
+				EB8D51862B03348F0081C32D /* pan.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +182,9 @@
 			dependencies = (
 			);
 			name = "pots-n-pans";
+			packageProductDependencies = (
+				EB8D51842B0333870081C32D /* Nuke */,
+			);
 			productName = "pots-n-pans";
 			productReference = EB28AC6E2B02B9C40093D5AA /* pots-n-pans.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +257,9 @@
 				Base,
 			);
 			mainGroup = EB28AC652B02B9C40093D5AA;
+			packageReferences = (
+				EB8D51832B0333870081C32D /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = EB28AC6F2B02B9C40093D5AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,8 +277,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB28AC7E2B02B9C50093D5AA /* LaunchScreen.storyboard in Resources */,
+				EB8D51932B033C780081C32D /* button.png in Resources */,
 				EB28AC7B2B02B9C50093D5AA /* Assets.xcassets in Resources */,
+				EB8D51892B03363B0081C32D /* blur.png in Resources */,
+				EB8D518F2B0339BC0081C32D /* broccoli.png in Resources */,
+				EB8D518B2B03394B0081C32D /* cherry.png in Resources */,
+				EB5A62CD2B02C3A100B85EC9 /* IndieFlower-Regular.ttf in Resources */,
 				EB28AC792B02B9C40093D5AA /* Main.storyboard in Resources */,
+				EB8D51872B03348F0081C32D /* pan.png in Resources */,
+				EB8D51912B033A8B0081C32D /* banana.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +648,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB8D51832B0333870081C32D /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = exactVersion;
+				version = 9.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB8D51842B0333870081C32D /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB8D51832B0333870081C32D /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB28AC662B02B9C40093D5AA /* Project object */;
 }
