@@ -2,7 +2,7 @@
 
 
 ## Week 9 Submission
-- Progress: [Video Follow-along](https://www.loom.com/share/afca237369da4ea489c6a3526bb785fb?sid=ac329d40-d20d-4b23-bede-bdca8b1c6c4a)
+- Progress: [Video Follow-along](https://www.loom.com/share/97be51b147f246c7a2f61add6a8379dc?sid=47c44e48-9537-479f-95f5-f881867a6244)
 
 **Sprints from now on:**
 - [X] Getting custom font and assets
