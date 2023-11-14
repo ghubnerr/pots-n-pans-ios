@@ -25,9 +25,6 @@ class ViewController: UIViewController {
     @IBAction func LetsCookButton(_ sender: Any) {
         performSegue(withIdentifier: "showUpload", sender: self)
     }
-    @IBAction func findRecipesButton(_ sender: Any) {
-        performSegue(withIdentifier: "loading", sender: self)
-    }
     @IBOutlet weak var PanImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
