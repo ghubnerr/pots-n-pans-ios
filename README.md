@@ -1,16 +1,17 @@
 # Pots N' Pans Mobile
 
 
-## Week 8 Submission
+## Week 9 Submission
 - Progress: [Video Follow-along](https://www.loom.com/share/afca237369da4ea489c6a3526bb785fb?sid=ac329d40-d20d-4b23-bede-bdca8b1c6c4a)
 
 **Sprints from now on:**
-1. Navigation and Pages
-2. Styling (part I)
-3. Turning on and interfacing with the API (Uploading Pictures and getting data back)
-4. Displaying Data from the API in table views
-5. Using segues to access individual recipes
-6. Style (part II)
+- [X] Getting custom font and assets
+- [X] Navigation and Pages
+- [X] Styling (part I)
+- [X] Turning on API (Now availble at [https://api.runpod.ai/v2/mi1w7cfskbr6up/runsync](https://api.runpod.ai/v2/mi1w7cfskbr6up/runsync))
+- [ ] Displaying Data from the API in table views
+- [ ] Using segues to access individual recipes
+- [ ] Style (part II)
 <hr>
 
 ## Table of Contents
