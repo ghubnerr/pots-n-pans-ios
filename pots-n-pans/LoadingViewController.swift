@@ -48,22 +48,18 @@ class LoadingViewController: UIViewController {
                         return
                     }
 
-                    if let dataString = String(data: data, encoding: .utf8) {
-                            print("Raw Data: \(dataString)")
-                        } else {
-                            print("Unable to convert data to string.")
-                        }
+
+                    
                     do {
                         
                         let responseObject = try JSONDecoder().decode(ResponseModel.self, from: data)
 
                         DispatchQueue.main.async {
                             if let recipesViewController = self.storyboard?.instantiateViewController(withIdentifier: "RecipesViewController") as? RecipesViewController {
-                                                    recipesViewController.responseObject = responseObject
-
-                                                    self.present(recipesViewController, animated: true, completion: nil)
-                                                }
-                                        }
+                                recipesViewController.responseObject = responseObject
+                                self.present(recipesViewController, animated: true, completion: nil)
+                            }
+                        }
 
                     } catch {
                         print("Error parsing JSON: \(error.localizedDescription)")

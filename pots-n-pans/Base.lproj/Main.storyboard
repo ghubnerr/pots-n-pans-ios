@@ -13,22 +13,42 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Root View Controller-->
+        <!--Recipes-->
         <scene sceneID="FVr-hA-7GX">
             <objects>
-                <tableViewController id="hUw-5Z-7oX" sceneMemberID="viewController">
+                <tableViewController id="hUw-5Z-7oX" customClass="RecipesTableViewController" customModule="pots_n_pans" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aNi-kj-Vqf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bz3-zd-4QG">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="108" id="bz3-zd-4QG" customClass="TableViewCell" customModule="pots_n_pans" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bz3-zd-4QG" id="us3-8p-Fs5">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="108"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1P-nN-uZS">
+                                            <rect key="frame" x="35" y="11" width="52" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSM-sQ-T0t">
+                                            <rect key="frame" x="132" y="11" width="241" height="86"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="recipeIngredients" destination="tSM-sQ-T0t" id="KDF-YR-NgM"/>
+                                    <outlet property="recipeTitle" destination="r1P-nN-uZS" id="Zex-9Q-5u0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,11 +56,11 @@
                             <outlet property="delegate" destination="hUw-5Z-7oX" id="T4F-zC-csd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="KqX-Ee-zdm"/>
+                    <navigationItem key="navigationItem" title="Recipes" largeTitleDisplayMode="always" id="KqX-Ee-zdm"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRQ-1Q-QXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1198" y="-56"/>
+            <point key="canvasLocation" x="1197.709923664122" y="-56.338028169014088"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="0Bi-Q2-i2V">
@@ -90,6 +110,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Let's Cook" cornerStyle="capsule" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" name="IndieFlower" family="Indie Flower" pointSize="30"/>
                                     <directionalEdgeInsets key="contentInsets" top="10" leading="40" bottom="10" trailing="40"/>
+                                    <color key="baseBackgroundColor" red="0.87843137250000003" green="0.68235294120000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="LetsCookButton:" destination="Noy-V0-X4q" eventType="touchUpInside" id="xdA-Hc-ZKl"/>

@@ -31,6 +31,9 @@
 		EBC7B0472B03F4A200B8E9BA /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7B0462B03F4A200B8E9BA /* ResponseModel.swift */; };
 		EBC7B04B2B04033700B8E9BA /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = EBC7B04A2B04033700B8E9BA /* Recipes.json */; };
 		EBC7B04D2B0403A300B8E9BA /* RecipeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7B04C2B0403A300B8E9BA /* RecipeLoader.swift */; };
+		EBC7B04F2B040A4400B8E9BA /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7B04E2B040A4400B8E9BA /* RecipesTableViewController.swift */; };
+		EBC7B0512B040B9000B8E9BA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7B0502B040B9000B8E9BA /* TableViewCell.swift */; };
+		EBC7B0532B040D2900B8E9BA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7B0522B040D2900B8E9BA /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		EBC7B0462B03F4A200B8E9BA /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		EBC7B04A2B04033700B8E9BA /* Recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 		EBC7B04C2B0403A300B8E9BA /* RecipeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeLoader.swift; sourceTree = "<group>"; };
+		EBC7B04E2B040A4400B8E9BA /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
+		EBC7B0502B040B9000B8E9BA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EBC7B0522B040D2900B8E9BA /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,9 @@
 				EBC7B0462B03F4A200B8E9BA /* ResponseModel.swift */,
 				EBC7B04A2B04033700B8E9BA /* Recipes.json */,
 				EBC7B04C2B0403A300B8E9BA /* RecipeLoader.swift */,
+				EBC7B04E2B040A4400B8E9BA /* RecipesTableViewController.swift */,
+				EBC7B0502B040B9000B8E9BA /* TableViewCell.swift */,
+				EBC7B0522B040D2900B8E9BA /* Recipe.swift */,
 			);
 			path = "pots-n-pans";
 			sourceTree = "<group>";
@@ -335,8 +344,11 @@
 				EB28AC762B02B9C40093D5AA /* ViewController.swift in Sources */,
 				EBC7B0432B03F41500B8E9BA /* RecipesViewController.swift in Sources */,
 				EBC7B04D2B0403A300B8E9BA /* RecipeLoader.swift in Sources */,
+				EBC7B0532B040D2900B8E9BA /* Recipe.swift in Sources */,
 				EBC7B03B2B03E2A800B8E9BA /* UploadViewController.swift in Sources */,
+				EBC7B04F2B040A4400B8E9BA /* RecipesTableViewController.swift in Sources */,
 				EBC7B03D2B03E76400B8E9BA /* LoadingViewController.swift in Sources */,
+				EBC7B0512B040B9000B8E9BA /* TableViewCell.swift in Sources */,
 				EB28AC722B02B9C40093D5AA /* AppDelegate.swift in Sources */,
 				EBC7B03F2B03F24E00B8E9BA /* apiKeys.swift in Sources */,
 				EBC7B0472B03F4A200B8E9BA /* ResponseModel.swift in Sources */,

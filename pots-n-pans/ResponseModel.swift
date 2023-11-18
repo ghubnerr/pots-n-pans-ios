@@ -19,3 +19,15 @@ struct Output: Codable {
     let classes: [String]
     let recipes: [String]
 }
+
+extension ResponseModel {
+    static var defaultModel: ResponseModel {
+        return ResponseModel(
+            delayTime: 0.0,
+            executionTime: 0.0,
+            id: "defaultID",
+            output: Output(classes: [], recipes: []),
+            status: "DefaultStatus"
+        )
+    }
+}
