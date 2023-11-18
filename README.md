@@ -1,17 +1,17 @@
 # Pots N' Pans Mobile
 
 
-## Week 9 Submission
-- Progress: [Video Follow-along](https://www.loom.com/share/97be51b147f246c7a2f61add6a8379dc?sid=47c44e48-9537-479f-95f5-f881867a6244)
+## Week 10 Submission
+- Progress: [Video Follow-along](https://www.loom.com/share/9f64c5598333477db57c29aa21ca367e?sid=5886ddbc-5a5c-4f64-ae28-a830d958e156)
 
 **Sprints from now on:**
 - [X] Getting custom font and assets
 - [X] Navigation and Pages
 - [X] Styling (part I)
 - [X] Turning on API (Now availble at [https://api.runpod.ai/v2/mi1w7cfskbr6up/runsync](https://api.runpod.ai/v2/mi1w7cfskbr6up/runsync))
-- [ ] Displaying Data from the API in table views
-- [ ] Using segues to access individual recipes
-- [ ] Style (part II)
+- [X] Creating a data model for the response and for the recipes 
+- [X] Getting data from the API
+- [X] Querying the database for instructions and ingredients
 <hr>
 
 ## Table of Contents
@@ -89,10 +89,6 @@ Pots n' Pans is the mobile version app of ["Let's Cook!"](https://github.com/ghu
 ## Wireframes
 ### Figma Wireframe (see [Wireframe file](./WireFrame.fig))
 <img width="760" alt="image" src="https://github.com/ghubnerr/pots-n-pans-ios/assets/91924667/3672729f-f8c8-4937-adfd-8e1c207279b7">
-
-## Schema 
-
-[This section will be completed in Unit 9]
 
 ### Model -- API Documentation can be found [here](https://github.com/Acty101/hackgtX-pots-and-pans)
 
