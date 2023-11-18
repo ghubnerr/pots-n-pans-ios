@@ -4,7 +4,7 @@
 ## Week 10 Submission
 - Progress: [Video Follow-along](https://www.loom.com/share/9f64c5598333477db57c29aa21ca367e?sid=5886ddbc-5a5c-4f64-ae28-a830d958e156)
 
-**Sprints from now on:**
+**Sprints completed:**
 - [X] Getting custom font and assets
 - [X] Navigation and Pages
 - [X] Styling (part I)
